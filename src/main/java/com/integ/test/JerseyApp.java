@@ -18,6 +18,7 @@ public class JerseyApp extends ResourceConfig {
     public JerseyApp() {
         register(HelloApi.class);
         register(MessageResource.class);
+        register(ClientResource.class);
         register(new JacksonJsonProvider());
     }
 }
